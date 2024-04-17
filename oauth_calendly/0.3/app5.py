@@ -8,7 +8,7 @@ CLIENT_ID = 'client_id'
 CLIENT_SECRET = 'client_secret'
 
 # Set the redirect URL for your application
-REDIRECT_URI = 'http://localhost:8080'  # Change this to your desired redirect URL
+REDIRECT_URI = 'http://localhost:8080/callback'  # Change this to your desired redirect URL
 
 AUTHORIZE_URL = 'https://calendly.com/oauth/authorize'
 TOKEN_URL = 'https://calendly.com/oauth/token'
@@ -134,4 +134,5 @@ def get_event_types():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='localhost', port=8080, debug=True)
+    #app.run(debug=True)
