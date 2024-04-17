@@ -47,6 +47,6 @@ Input the access token obtained in step 1 as payload json and call /get_event_ty
 curl --location 'http://localhost:8080/get_event_types' \
 --header 'Content-Type: application/json' \
 --data '{
-    "access_token": ""
+    "access_token": "access token obtained in step 1"
 }'
 ```
