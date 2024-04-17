@@ -122,12 +122,14 @@ def get_event_types():
 
     output_event_types = list_meeting_types(access_token, current_organization)
 
-    event_type_list = []
+    #event_type_list = []
+    event_type_dict = {}
 
     for event_type in output_event_types['collection']:
-        event_type_list.append(event_type['name'])
+        event_type_dict[event_type['name']] = [event_type['uri'],event_type['scheduling_url']]
+        # event_type_list.append(event_type['name'])
 
-    return event_type_list
+    return event_type_dict
 
 
 
