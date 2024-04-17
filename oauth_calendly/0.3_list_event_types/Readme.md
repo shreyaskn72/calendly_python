@@ -50,3 +50,5 @@ curl --location 'http://localhost:8080/get_event_types' \
     "access_token": "access token obtained in step 1"
 }'
 ```
+#### Note:
+step 1 should be opened in web browsers like google chrome, microsoft edge, firefox, etc. Refer to postman collection attached for step 2 and step 3.
